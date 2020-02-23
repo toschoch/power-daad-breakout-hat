@@ -1,6 +1,8 @@
 # Power DA/AD Breakout (PDAAD) HAT EEPROM image.
 
 ## Usage
+(see https://lb.raspberrypi.org/forums/viewtopic.php?t=108134)
+
 1. create tools with `make`
 
 	Tools available:
@@ -31,7 +33,7 @@
 	* enable i2c in `sudo raspi-config`, `/etc/modules` and `/boot/config.txt` (see https://developer-blog.net/raspberry-pi-i2c-aktivieren/)
 	* install i2cdetec `sudo apt install i2c-tools`
 	* check with `sudo i2cdetect -y 0` (should be at adress 50)
-3. Flash eep file `sudo ./eepflash.sh -w -t=24c32 -f=pdaad.eep -d=0 -a=50`
+3. Flash eep file `sudo ./eepflash.sh -w -t=24c32 -f=pdaad.eep`
 4. Enable EEPROM write protection (GPIO25 -> low)
 	```bash
 		sudo bash

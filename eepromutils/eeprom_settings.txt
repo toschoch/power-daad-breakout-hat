@@ -16,7 +16,7 @@
 
 # 128 bit UUID. If left at zero eepmake tool will auto-generate
 # RFC 4122 compliant UUID
-product_uuid 00000000-0000-0000-0000-000000000000
+product_uuid 146ec28a-a96a-4a5f-8c20-7cc79f9a87d5
 
 # 16 bit product id
 product_id 0xAAAA
@@ -52,7 +52,7 @@ gpio_hysteresis 0
 # 3 = reserved
 # If back_power=2 then USB high current mode will be automatically 
 # enabled on the Pi
-back_power 0
+back_power 1
 
 ########################################################################
 # GPIO pins, uncomment for GPIOs used on board
@@ -65,26 +65,26 @@ back_power 0
 #setgpio  2     INPUT     DEFAULT
 #setgpio  3     INPUT     DEFAULT
 #setgpio  4     INPUT     DEFAULT
-#setgpio  5     INPUT     DEFAULT
-#setgpio  6     INPUT     DEFAULT
+setgpio  5     OUTPUT     DEFAULT
+setgpio  6     OUTPUT     DEFAULT
 #setgpio  7     INPUT     DEFAULT
 #setgpio  8     INPUT     DEFAULT
 #setgpio  9     INPUT     DEFAULT
 #setgpio  10    INPUT     DEFAULT
 #setgpio  11    INPUT     DEFAULT
-#setgpio  12    INPUT     DEFAULT
-#setgpio  13    INPUT     DEFAULT
+setgpio  12    ALT0     DEFAULT
+setgpio  13    ALT0     DEFAULT
 #setgpio  14    INPUT     DEFAULT
 #setgpio  15    INPUT     DEFAULT
-#setgpio  16    INPUT     DEFAULT
-#setgpio  17    INPUT     DEFAULT
-#setgpio  18    INPUT     DEFAULT
-#setgpio  19    INPUT     DEFAULT
-#setgpio  20    INPUT     DEFAULT
-#setgpio  21    INPUT     DEFAULT
+setgpio  16    OUTPUT     DEFAULT
+setgpio  17    OUTPUT     DEFAULT
+setgpio  18    OUTPUT      DEFAULT
+setgpio  19    OUTPUT     DEFAULT
+setgpio  20    OUTPUT     DEFAULT
+setgpio  21    OUTPUT     DEFAULT
 #setgpio  22    INPUT     DEFAULT
 #setgpio  23    INPUT     DEFAULT
 #setgpio  24    INPUT     DEFAULT
-setgpio  25    OUTPUT     UP
-#setgpio  26    INPUT     DEFAULT
-#setgpio  27    INPUT     DEFAULT
+setgpio  25    INPUT     UP
+setgpio  26    OUTPUT     DEFAULT
+setgpio  27    OUTPUT     DEFAULT
