@@ -1,5 +1,11 @@
 # Power Digital/Analog - Analog/Digital Hat
 
+## Install actual Raspbian on your SD card
+1. Download Raspbian from https://www.raspberrypi.org/downloads/raspbian/
+2. Install sdcard with balena etcher https://www.balena.io/etcher/
+3. use the repo rpi-image to copy essential files to rpi
+4. restart rpi
+
 ## Compile the Analog ad5593r Kernel Driver
 Analog devices provide a Linux/Raspbian Kernel driver
 https://wiki.analog.com/resources/tools-software/linux-drivers/iio-dac/ad5593r
